@@ -1,0 +1,17 @@
+<div *ngIf="input_detalles" class="container">
+    <div class="lista">
+        <ul>
+            <li>{{input_detalles.id}}</li>
+            <li>{{input_detalles.descripcion}}</li>
+            <li>{{input_detalles.tipo}}</li>
+            <li>{{input_detalles.fechaDeVencimiento}}</li>
+            <li>{{input_detalles.precio}}</li>
+        </ul>
+    </div>
+    <div class="foto">
+      <img src={{input_detalles.rutaDeFoto}} alt="Imagen de entidad" >
+    </div>
+    <div class="boton">
+        <button type="button" (click)="limpiar()">Limpiar</button>
+    </div>
+</div>

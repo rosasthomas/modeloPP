@@ -1,0 +1,21 @@
+<div class="container">
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Descripcion</th>
+            <th>Tipo</th>
+            <th>Fecha de Vencimiento</th>
+            <th>Precio</th>
+            <th>Ruta de Foto</th>
+        </tr>
+        <tr *ngFor="let entidad of input_listado">
+            <td>{{entidad.id}}</td>
+            <td>{{entidad.descripcion}}</td>
+            <td>{{entidad.tipo}}</td>
+            <td>{{entidad.fechaDeVencimiento}}</td>
+            <td>{{entidad.precio}}</td>
+            <td><img src={{entidad.rutaDeFoto}}></td>
+            <td><app-boton-borrar (output_btnBorrar)="entidadParaBorrar($event)" [input_btnBorrar_entidad]="entidad"></app-boton-borrar></td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,14 @@
+<div class="navbar">
+    <div (click)="nav('prod')">
+        <span>Productos</span>
+    </div>
+    
+    <div (click)="nav('venta')">
+        <span>Ventas</span>
+
+    </div>
+</div>
+<div>
+    <app-productos *ngIf="prod" [input_productos]="listadoEntidades"></app-productos>
+    <app-ventas *ngIf="!prod"></app-ventas>
+</div>

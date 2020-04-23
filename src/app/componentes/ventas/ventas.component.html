@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="column">
+        <app-venta-listado (output_listadoVenta)="borrar($event)" [input_listadoVenta]="listadoVentas"></app-venta-listado>
+    </div>
+    <div class="column">
+        <div class="altaProd">
+            <app-venta-nueva (output_altaVenta)="agregarVenta($event)"></app-venta-nueva>
+        </div>
+    </div>
+    </div>

@@ -1,0 +1,19 @@
+.row{
+    display: flex;
+}
+
+.column{
+    display: flex;
+    align-items: center;
+    flex: 50%;
+    flex-flow: column ;
+}
+
+div.detalle{
+    width: 40%;
+    
+}
+
+div.search{
+    width: 40%;
+}

@@ -1,0 +1,17 @@
+<div class="row">
+<div class="column">
+    <app-listado-entidad (output_listado)="borrar($event)" [input_listado]="input_productos"></app-listado-entidad>
+</div>
+<div class="column">
+    <div class="search">
+    <app-buscar (output_buscar)="entidadParaDetalle($event)" [input_buscar]="input_productos"></app-buscar>
+
+    </div>
+    <div class="detalle">
+    <app-detalles [input_detalles]="entidadDetalle"></app-detalles>
+    </div>
+    <div class="altaProd">
+        <app-alta-prod (output_altaProd)="agregarProd($event)"></app-alta-prod>
+    </div>
+</div>
+</div>
